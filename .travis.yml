@@ -12,6 +12,7 @@ jdk:
   - oraclejdk8
 
 after_success:
+  - chmod ugo+x .buildscript/deploy_snapshot.sh
   - .buildscript/deploy_snapshot.sh
 
 env:
