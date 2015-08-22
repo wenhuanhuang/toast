@@ -19,6 +19,7 @@ Toaster.show(Toast.LENGTH_LONG, new Throwable("throwable"), "A button %s was cli
                 
 Toaster.show(R.string.display_res_id, button.getId(), button.getText());
 
-Toaster.show(new Throwable("throwable"), R.string.display_res_id, button.getId(), button.getText());
+Toaster.show(new Throwable("throwable"), 
+                R.string.display_res_id, button.getId(), button.getText());
 ```
 

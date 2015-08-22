@@ -51,7 +51,8 @@ public class ToastActivity extends Activity {
 
         handler.postDelayed(new Runnable() {
           @Override public void run() {
-            Toaster.show(new Throwable("throwable"), R.string.display_res_id, button.getId(), button.getText());
+            Toaster.show(new Throwable("throwable"),
+                R.string.display_res_id, button.getId(), button.getText());
           }
         }, 1000);
         break;
