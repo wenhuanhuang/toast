@@ -26,7 +26,7 @@ Toaster.show(new Throwable("throwable"),
 Download
 --------
 
-Download [the latest JAR][2] or grab via Maven:
+Download [the latest JAR][1] or grab via Maven:
 
 ```xml
 <dependency>
@@ -57,3 +57,7 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+    
+    
+[1]: https://search.maven.org/remote_content?g=com.github.huangwenhuan0.toast&a=toast&v=LATEST
+[snap]: https://oss.sonatype.org/content/repositories/snapshots/com/github/huangwenhuan0/toast/toast/
