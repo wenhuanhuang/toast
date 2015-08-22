@@ -3,6 +3,7 @@
   <string name="hello_world">Hello world!</string>
   <string name="string_format">String format</string>
   <string name="res_id">Hello resource format</string>
+  <string name="timber">timber</string>
 
   <string name="display_res_id">A button %1$s was clicked to say %2$s.</string>
 </resources>

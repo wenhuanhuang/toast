@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import timber.log.Timber;
 import toast.util.Toaster;
 
 public class ToastActivity extends Activity {
@@ -56,6 +57,16 @@ public class ToastActivity extends Activity {
           }
         }, 1000);
         break;
+    }
+  }
+
+  @OnClick(R.id.timber)
+  void timberClicked(final Button button) {
+    String str = null;
+    try {
+      str.equals(null);
+    } catch (Exception e) {
+      Timber.e(e, "A button %s was clicked to say %s", button.getId(), button.getText());
     }
   }
 }
