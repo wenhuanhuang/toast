@@ -23,6 +23,24 @@ Toaster.show(new Throwable("throwable"),
                 R.string.display_res_id, button.getId(), button.getText());
 ```
 
+Download
+--------
+
+Download [the latest JAR][2] or grab via Maven:
+
+```xml
+<dependency>
+  <groupId>com.github.huangwenhuan0.toast</groupId>
+  <artifactId>toast</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
+or Gradle:
+```groovy
+compile 'com.github.huangwenhuan0.toast:toast:0.0.1'
+```
+Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
+
 License
 --------
 
