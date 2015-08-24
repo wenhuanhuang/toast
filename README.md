@@ -26,18 +26,18 @@ Toaster.show(new Throwable("throwable"),
 Download
 --------
 
-Download [the latest AAR][2] or grab via Maven:
+Download [the latest Jar][1] or grab via Maven:
 
 ```xml
 <dependency>
   <groupId>com.github.huangwenhuan0.toast</groupId>
   <artifactId>toast</artifactId>
-  <version>0.0.1</version>
+  <version>0.1.1</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-compile 'com.github.huangwenhuan0.toast:toast:0.0.1'
+compile 'com.github.huangwenhuan0.toast:toast:0.1.1@aar'
 ```
 Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
 
@@ -60,5 +60,5 @@ License
     
     
 [1]: https://search.maven.org/remote_content?g=com.github.huangwenhuan0.toast&a=toast&v=LATEST
-[2]: https://repo1.maven.org/maven2/com/github/huangwenhuan0/toast/toast/0.0.1/toast-0.0.1.aar
+[2]: https://repo1.maven.org/maven2/com/github/huangwenhuan0/toast/toast/0.0.1/toast-0.1.1.aar
 [snap]: https://oss.sonatype.org/content/repositories/snapshots/com/github/huangwenhuan0/toast/toast/
