@@ -14,36 +14,33 @@ import toast.util.Toaster;
 public class ToastActivity extends Activity {
   final Handler handler = new Handler();
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
+  @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     ButterKnife.bind(this);
   }
 
-  @OnClick({R.id.hello, R.id.string_format, R.id.res_id})
-  void helloClicked(final Button button) {
+  @OnClick({ R.id.hello, R.id.string_format, R.id.res_id }) void helloClicked(final Button button) {
     switch (button.getId()) {
       case R.id.hello:
-        Toaster.show("A button %s was clicked to say %s",
-            button.getId(), button.getText());
+        Toaster.show("A button %s was clicked to say %s", button.getId(), button.getText());
 
         handler.postDelayed(new Runnable() {
           @Override public void run() {
-            Toaster.show(Toast.LENGTH_LONG, " - A button %s was clicked to say %s",
-                button.getId(), button.getText());
+            Toaster.show(Toast.LENGTH_LONG, " - A button %s was clicked to say %s", button.getId(),
+                button.getText());
           }
         }, 1000);
 
         break;
       case R.id.string_format:
-        Toaster.show(new Throwable("throwable"), "A button %s was clicked to say",
-            button.getId(), button.getText());
+        Toaster.show(new Throwable("throwable"), "A button %s was clicked to say", button.getId(),
+            button.getText());
 
         handler.postDelayed(new Runnable() {
           @Override public void run() {
-            Toaster.show(Toast.LENGTH_LONG, new Throwable("throwable"), " - A button %s was clicked to say",
-                button.getId(), button.getText());
+            Toaster.show(Toast.LENGTH_LONG, new Throwable("throwable"),
+                " - A button %s was clicked to say", button.getId(), button.getText());
           }
         }, 1000);
         break;
@@ -52,16 +49,15 @@ public class ToastActivity extends Activity {
 
         handler.postDelayed(new Runnable() {
           @Override public void run() {
-            Toaster.show(new Throwable("throwable"),
-                R.string.display_res_id, button.getId(), button.getText());
+            Toaster.show(new Throwable("throwable"), R.string.display_res_id, button.getId(),
+                button.getText());
           }
         }, 1000);
         break;
     }
   }
 
-  @OnClick(R.id.timber)
-  void timberClicked(final Button button) {
+  @OnClick(R.id.timber) void timberClicked(final Button button) {
     String str = null;
     try {
       str.equals(null);

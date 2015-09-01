@@ -13,8 +13,7 @@ public class ToasterTree extends Timber.DebugTree {
     Toaster.initialize(context);
   }
 
-  @Override
-  protected void log(int priority, String tag, String message, Throwable t) {
+  @Override protected void log(int priority, String tag, String message, Throwable t) {
     message = tag + "/" + priorityToString(priority) + ": " + message;
     Toaster.show(message);
   }
